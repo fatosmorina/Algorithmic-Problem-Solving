@@ -1,4 +1,4 @@
-package hackerrank.algorithms;
+package hackerrank.algorithms.implementations;
 
 import static java.lang.Integer.parseInt;
 import static java.lang.System.exit;
