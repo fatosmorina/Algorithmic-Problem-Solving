@@ -27,7 +27,6 @@ public class Kangaroo {
 		System.out.println("NO");
 	    }
 	}
-
     }
 
     static int nextInt() throws IOException {
