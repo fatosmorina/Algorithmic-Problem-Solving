@@ -1,0 +1,13 @@
+package leetcode;
+
+public class SingleNumber {
+///https://leetcode.com/problems/single-number/
+    public static int singleNumber(int[] nums) {
+	int result = 0;
+	for (int number : nums) {
+	    result ^= number;
+	}
+	return result;
+    }
+
+}
