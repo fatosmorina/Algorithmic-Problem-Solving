@@ -1,7 +1,7 @@
 /**
  * 
  */
-package leetcode;
+package leetcode.easy;
 
 /**
  * FatosMorina.com

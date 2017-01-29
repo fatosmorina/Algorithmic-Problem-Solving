@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.easy;
 
 public class NumberComplement {
 //https://leetcode.com/problems/number-complement/

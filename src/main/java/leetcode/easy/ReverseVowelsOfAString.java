@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.easy;
 
 import static java.lang.Integer.parseInt;
 import static java.lang.System.exit;

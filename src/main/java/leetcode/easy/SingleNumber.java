@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.easy;
 
 public class SingleNumber {
     /// https://leetcode.com/problems/single-number/

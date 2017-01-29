@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.easy;
 
 public class HammingDistance {
     // https://leetcode.com/problems/hamming-distance/
