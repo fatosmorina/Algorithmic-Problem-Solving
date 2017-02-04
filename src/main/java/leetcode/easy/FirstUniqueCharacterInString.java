@@ -1,11 +1,5 @@
-/**
- * 
- */
 package leetcode.easy;
 
-/**
- * FatosMorina.com
- */
 // https://leetcode.com/problems/first-unique-character-in-a-string/
 public class FirstUniqueCharacterInString {
 
