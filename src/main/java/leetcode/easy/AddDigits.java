@@ -1,5 +1,6 @@
 package leetcode.easy;
 
+//https://leetcode.com/problems/add-digits/
 public class AddDigits {
 
     public int addDigits(int number) {

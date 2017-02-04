@@ -1,8 +1,4 @@
 package leetcode.easy;
-
-/**
- * Fatos Morina
- */
 public class FindTheDifference {
 //https://leetcode.com/problems/find-the-difference/
     public char findTheDifference(String s, String t) {
