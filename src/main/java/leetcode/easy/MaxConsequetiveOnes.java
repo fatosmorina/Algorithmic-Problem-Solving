@@ -1,5 +1,5 @@
 package leetcode.easy;
-
+//https://leetcode.com/problems/max-consecutive-ones/
 public class MaxConsequetiveOnes {
 
     public int findMaxConsecutiveOnes(int[] nums) {
