@@ -1,7 +1,7 @@
 package leetcode.easy;
 
+// https://leetcode.com/problems/number-of-1-bits/
 public class NumberOf1Bits {
-    // https://leetcode.com/problems/number-of-1-bits/
     public int hammingWeight(int n) {
 	String nAsString = Integer.toBinaryString(n);
 	int counter = 0;
