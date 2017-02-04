@@ -1,7 +1,7 @@
 package leetcode.easy;
 
+// https://leetcode.com/problems/hamming-distance/
 public class HammingDistance {
-    // https://leetcode.com/problems/hamming-distance/
 
     public int hammingDistance(int x, int y) {
 	StringBuilder xAsString = new StringBuilder(Integer.toBinaryString(x));
