@@ -1,11 +1,5 @@
-/**
- * 
- */
 package leetcode.easy;
 
-/**
- * FatosMorina.com
- */
 public class CountPrimes {
 
     public int countPrimes(int n) {
