@@ -1,25 +1,13 @@
-/**
- * 
- */
 package leetcode.easy;
 
-import static java.lang.Integer.parseInt;
-import static java.lang.System.exit;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.StringTokenizer;
+
 // https://leetcode.com/problems/construct-the-rectangle/
 public class ConstructRectangle {
 
-    public static int[] constructRectangle(int area) {
+    public int[] constructRectangle(int area) {
 	int[] rectangle = { area, 1 };
 	double squareRoot = Math.sqrt(area);
 	int squareRootAsInt = (int) (squareRoot);
@@ -67,36 +55,4 @@ public class ConstructRectangle {
 	}
 	return rectangle;
     }
-
-    static void solve() throws Exception {
-	System.out.println(Arrays.toString(constructRectangle(16)));
-    }
-
-    static int nextInt() throws IOException {
-	return parseInt(next());
-    }
-
-    static String next() throws IOException {
-	while (tok == null || !tok.hasMoreTokens()) {
-	    tok = new StringTokenizer(in.readLine());
-	}
-	return tok.nextToken();
-    }
-
-    public static void main(String[] args) {
-	try {
-	    in = new BufferedReader(new InputStreamReader(System.in));
-	    out = new PrintWriter(new OutputStreamWriter(System.out));
-	    solve();
-	    in.close();
-	    out.close();
-	} catch (Throwable e) {
-	    e.printStackTrace();
-	    exit(0);
-	}
-    }
-
-    static BufferedReader in;
-    static PrintWriter out;
-    static StringTokenizer tok;
 }
