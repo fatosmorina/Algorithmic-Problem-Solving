@@ -13,7 +13,8 @@ public class NumberOf1Bits {
 	return counter;
     }
 
-    public int hamingWeight2(int n) {
+    //Second solution    
+    public int hammingWeight2(int n) {
 	int sum = 0;
 	while (n != 0) {
 	    sum++;
