@@ -1,45 +1,33 @@
 package codility;
 
-import static java.lang.Integer.parseInt;
-import static java.lang.System.exit;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.util.StringTokenizer;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.runners.MockitoJUnitRunner;
+
+@RunWith(MockitoJUnitRunner.class)
 
 public class PermCheckTest {
-    static void solve() throws Exception {
+    @InjectMocks
+    PermCheck permCheck;
 
+    @Test
+    public void shouldReturnOne() {
+	int[] array = { 1, 2, 3 };
+	assertEquals(1, permCheck.solution(array));
     }
 
-    static int nextInt() throws IOException {
-	return parseInt(next());
+    @Test
+    public void shouldReturnZero() {
+	int[] array = { 1, 2, 4 };
+	assertEquals(0, permCheck.solution(array));
     }
 
-    static String next() throws IOException {
-	while (tok == null || !tok.hasMoreTokens()) {
-	    tok = new StringTokenizer(in.readLine());
-	}
-	return tok.nextToken();
+    @Test
+    public void shouldReturnZero2() {
+	int[] array = { 1, 2, 3, 5 };
+	assertEquals(0, permCheck.solution(array));
     }
-
-    public static void main(String[] args) {
-	try {
-	    in = new BufferedReader(new InputStreamReader(System.in));
-	    out = new PrintWriter(new OutputStreamWriter(System.out));
-	    solve();
-	    in.close();
-	    out.close();
-	} catch (Throwable e) {
-	    e.printStackTrace();
-	    exit(0);
-	}
-    }
-
-    static BufferedReader in;
-    static PrintWriter out;
-    static StringTokenizer tok;
 }

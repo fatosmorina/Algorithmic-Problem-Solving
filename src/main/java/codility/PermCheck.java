@@ -1,45 +1,20 @@
 package codility;
 
-import static java.lang.Integer.parseInt;
-import static java.lang.System.exit;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.util.StringTokenizer;
-
+import java.util.HashSet;
+import java.util.Set;
 
 public class PermCheck {
-    static void solve() throws Exception {
 
-    }
-
-    static int nextInt() throws IOException {
-	return parseInt(next());
-    }
-
-    static String next() throws IOException {
-	while (tok == null || !tok.hasMoreTokens()) {
-	    tok = new StringTokenizer(in.readLine());
+    public int solution(int[] array) {
+	Set<Integer> set = new HashSet<Integer>();
+	for (int i = 0; i < array.length; i++) {
+	    set.add(array[i]);
 	}
-	return tok.nextToken();
-    }
-
-    public static void main(String[] args) {
-	try {
-	    in = new BufferedReader(new InputStreamReader(System.in));
-	    out = new PrintWriter(new OutputStreamWriter(System.out));
-	    solve();
-	    in.close();
-	    out.close();
-	} catch (Throwable e) {
-	    e.printStackTrace();
-	    exit(0);
+	for (int i = 1; i <= array.length; i++) {
+	    if (!set.contains(i)) {
+		return 0;
+	    }
 	}
+	return 1;
     }
-
-    static BufferedReader in;
-    static PrintWriter out;
-    static StringTokenizer tok;
 }
