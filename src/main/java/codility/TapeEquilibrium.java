@@ -9,7 +9,7 @@ public class TapeEquilibrium {
 	for (int i = 0; i < length; i++) {
 	    rightSum = rightSum + array[i];
 	}
-	for (int i = 0; i < length; i++) {
+	for (int i = 0; i < length-1; i++) {
 	    leftSum = leftSum + array[i];
 	    rightSum = rightSum - array[i];
 	    minimalDifference = Math.min(minimalDifference, Math.abs(leftSum - rightSum));
