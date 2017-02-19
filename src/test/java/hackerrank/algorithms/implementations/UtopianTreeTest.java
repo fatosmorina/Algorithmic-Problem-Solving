@@ -14,15 +14,18 @@ public class UtopianTreeTest {
     UtopianTree utopianTree;
 
     @Test
-    public void shouldReturnArray() {
-	int[] testCases = { 0, 1, 4 };
-	int[] expectedResult = { 1, 2, 7 };
-	int expectedLength = expectedResult.length;
-	int[] actualResult = utopianTree.solution(testCases);
-	assertEquals(expectedLength, actualResult.length);
-	for (int i = 0; i < expectedLength; i++) {
-	    assertEquals(expectedResult[i], actualResult[i]);
-	}
+    public void shouldReturnOne() {
+	assertEquals(1, utopianTree.solution(0));
+    }
+
+    @Test
+    public void shouldReturnTwo() {
+	assertEquals(2, utopianTree.solution(1));
+    }
+
+    @Test
+    public void shouldReturnSeven() {
+	assertEquals(7, utopianTree.solution(4));
     }
 
 }
