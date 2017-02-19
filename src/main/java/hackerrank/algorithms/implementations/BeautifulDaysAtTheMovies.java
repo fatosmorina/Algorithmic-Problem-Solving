@@ -9,6 +9,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
+//https://www.hackerrank.com/challenges/beautiful-days-at-the-movies
 public class BeautifulDaysAtTheMovies {
     static void solve() throws Exception {
 	int firstNumber = nextInt();
