@@ -1,45 +1,44 @@
 package hackerrank.algorithms.implementations;
 
-import static java.lang.Integer.parseInt;
-import static java.lang.System.exit;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
-
+//https://www.hackerrank.com/challenges/angry-professor
 public class AngryProfessor {
-    static void solve() throws Exception {
-
-    }
-
-    static int nextInt() throws IOException {
-	return parseInt(next());
-    }
-
-    static String next() throws IOException {
-	while (tok == null || !tok.hasMoreTokens()) {
-	    tok = new StringTokenizer(in.readLine());
-	}
-	return tok.nextToken();
-    }
 
     public static void main(String[] args) {
-	try {
-	    in = new BufferedReader(new InputStreamReader(System.in));
-	    out = new PrintWriter(new OutputStreamWriter(System.out));
-	    solve();
-	    in.close();
-	    out.close();
-	} catch (Throwable e) {
-	    e.printStackTrace();
-	    exit(0);
+	Scanner input = new Scanner(System.in);
+	int numberOfTestCases = input.nextInt();
+	while (numberOfTestCases != 0) {
+	    int numberOfStudents = input.nextInt();
+	    int leastRequired = input.nextInt();
+	    int counter = 0;
+	    for (int i = 0; i < numberOfStudents; i++) {
+		if (input.nextInt() <= 0) {
+		    counter++;
+		}
+	    }
+	    if (counter >= leastRequired) {
+		System.out.println("NO");
+	    } else {
+		System.out.println("YES");
+	    }
+	    numberOfTestCases--;
+	}
+	input.close();
+    }
+
+    public String isClassCanceled(int numberOfStudents, int leastRequired, int[] time) {
+	int counter = 0;
+	for (int i = 0; i < numberOfStudents; i++) {
+	    if (time[i] <= 0) {
+		counter++;
+	    }
+	}
+	if (counter >= leastRequired) {
+	    return "NO";
+	} else {
+	    return "YES";
 	}
     }
 
-    static BufferedReader in;
-    static PrintWriter out;
-    static StringTokenizer tok;
 }
