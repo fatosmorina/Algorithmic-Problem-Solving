@@ -1,5 +1,5 @@
 package hackerrank.algorithms.implementations;
-
+//https://www.hackerrank.com/challenges/utopian-tree
 public class UtopianTree {
     public int solution(int value) {
 	boolean wasDoubled = false;
