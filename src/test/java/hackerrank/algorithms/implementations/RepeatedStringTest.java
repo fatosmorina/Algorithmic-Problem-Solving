@@ -2,7 +2,6 @@ package hackerrank.algorithms.implementations;
 
 import static java.lang.Integer.parseInt;
 import static java.lang.System.exit;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,36 +9,10 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-///https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited
-public class JumpingOnTheCloud {
-    static void solve() throws Exception {
-	int numberOfClouds = nextInt();
-	int jumpDistance = nextInt();
-	int[] clouds = new int[numberOfClouds];
-	for (int i = 0; i < numberOfClouds; i++) {
-	    clouds[i] = nextInt();
-	}
-	System.out.println(getEnergyBalance(numberOfClouds, jumpDistance, clouds));
-    }
 
-    public static int getEnergyBalance(int numberOfClouds, int jumpDistance, int[] clouds) {
-	int energy = 100;
-	int i = 0;
-	int length = clouds.length;
-	while ((i + jumpDistance) % length != 0) {
-	    int currentCloud = clouds[(i + jumpDistance) % length];
-	    if (currentCloud == 1) {
-		energy = energy - 3;
-	    } else {
-		energy = energy - 1;
-	    }
-	    i = i + jumpDistance;
-	}
-	energy = energy - 1;
-	if (clouds[0] == 1) {
-	    return energy - 2;
-	}
-	return energy;
+public class RepeatedStringTest {
+    static void solve() throws Exception {
+
     }
 
     static int nextInt() throws IOException {
