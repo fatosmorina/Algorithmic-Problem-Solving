@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 //https://www.hackerrank.com/challenges/the-hurdle-race
@@ -24,12 +23,21 @@ public class HurdleRace {
     }
 
     public static int getMinimalNumberOfBeverages(int initialJumpHeight, int[] heights) {
-        Arrays.sort(heights);
-        int difference = heights[heights.length - 1] - initialJumpHeight;
+        int difference = getMaximalNumberOfArray(heights) - initialJumpHeight;
         if (difference <= 0) {
             return 0;
         }
         return difference;
+    }
+
+    private static int getMaximalNumberOfArray(int[] array) {
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            }
+        }
+        return max;
     }
 
     static int nextInt() throws IOException {
