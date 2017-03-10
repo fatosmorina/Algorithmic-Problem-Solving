@@ -21,14 +21,14 @@ public class SequenceEquation {
             map.put(nextInt(), i);
         }
         Map<Integer, Integer> result = getInverse(map);
-        for (int i = 1; i < number + 1; i++) {
+        for (int i = 1; i <= number; i++) {
             System.out.println(result.get(i));
         }
     }
 
     public static Map<Integer, Integer> getInverse(Map<Integer, Integer> inputMap) {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-        for (int i = 1; i < inputMap.size(); i++) {
+        for (int i = 1; i < inputMap.size() + 1; i++) {
             map.put(i, inputMap.get(inputMap.get(i)));
         }
         return map;
