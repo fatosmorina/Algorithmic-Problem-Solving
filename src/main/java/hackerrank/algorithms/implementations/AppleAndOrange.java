@@ -5,6 +5,8 @@ import static java.lang.System.exit;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
@@ -60,7 +62,11 @@ public class AppleAndOrange {
 
     public static void main(String[] args) {
 	try {
-	    solve();
+		in = new BufferedReader(new InputStreamReader(System.in));
+        out = new PrintWriter(new OutputStreamWriter(System.out));
+        solve();
+        in.close();
+        out.close();
 	} catch (Throwable e) {
 	    e.printStackTrace();
 	    exit(0);
