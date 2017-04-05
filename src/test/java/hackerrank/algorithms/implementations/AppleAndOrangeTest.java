@@ -19,5 +19,11 @@ public class AppleAndOrangeTest {
 		int[] distances = {2, 1};
 		assertEquals(appleAndOrange.getFruitCounter(7, 5, 11, distances), 1);
 	}
+	
+	@Test
+	public void shouldReturnOrangeCounterEqualToOne(){
+		int[] distances = {-6};
+		assertEquals(appleAndOrange.getFruitCounter(7, 15, 11, distances), 1);
+	}
 
 }
