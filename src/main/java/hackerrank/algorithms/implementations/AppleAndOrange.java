@@ -21,18 +21,17 @@ public class AppleAndOrange {
 		int orangeCenter = nextInt();
 		int numberOfApples = nextInt();
 		int numberOfOranges = nextInt();
-		int appleCounter = 0;
-		int orangeCounter = 0;
 
+		int[] appleDistances = new int[numberOfApples];
+		int[] orangeDistances = new int[numberOfOranges];
+
+		
 		for (int i = 0; i < numberOfApples; i++) {
 			int currentDistance = nextInt();
 			if (currentDistance < 0) {
 				continue;
 			}
-			int distance = appleCenter + currentDistance;
-			if (distance >= firstCoordinateOfHouse && distance <= secondCoordinateOfHouse) {
-				appleCounter++;
-			}
+			appleDistances[i] = currentDistance;
 		}
 
 		for (int i = 0; i < numberOfOranges; i++) {
@@ -40,15 +39,24 @@ public class AppleAndOrange {
 			if (currentDistance > 0) {
 				continue;
 			}
-			int distance = orangeCenter + currentDistance;
+			orangeDistances[i] = currentDistance;
+		}
+		System.out.println(getFruitCounter(firstCoordinateOfHouse, appleCenter, secondCoordinateOfHouse, appleDistances));;
+		System.out.println(getFruitCounter(firstCoordinateOfHouse, orangeCenter, secondCoordinateOfHouse, orangeDistances));;
+	}
+	
+	
+	public static int getFruitCounter(int firstCoordinateOfHouse, int center, int secondCoordinateOfHouse, int[] distances){
+		int counter = 0;
+		for(int i = 0; i<distances.length; i++){
+			int distance = center + distances[i];
 			if (distance >= firstCoordinateOfHouse && distance <= secondCoordinateOfHouse) {
-				orangeCounter++;
+				counter++;
 			}
 		}
-		System.out.println(appleCounter);
-		System.out.println(orangeCounter);
+		return counter;		
 	}
-
+	
 	static int nextInt() throws IOException {
 		return parseInt(next());
 	}
