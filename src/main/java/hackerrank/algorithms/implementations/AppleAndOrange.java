@@ -25,7 +25,6 @@ public class AppleAndOrange {
 		int[] appleDistances = new int[numberOfApples];
 		int[] orangeDistances = new int[numberOfOranges];
 
-		
 		for (int i = 0; i < numberOfApples; i++) {
 			int currentDistance = nextInt();
 			if (currentDistance < 0) {
@@ -41,22 +40,60 @@ public class AppleAndOrange {
 			}
 			orangeDistances[i] = currentDistance;
 		}
-		System.out.println(getFruitCounter(firstCoordinateOfHouse, appleCenter, secondCoordinateOfHouse, appleDistances));;
-		System.out.println(getFruitCounter(firstCoordinateOfHouse, orangeCenter, secondCoordinateOfHouse, orangeDistances));;
+		System.out
+				.println(getFruitCounter(firstCoordinateOfHouse, appleCenter, secondCoordinateOfHouse, appleDistances));
+		;
+		System.out.println(
+				getFruitCounter(firstCoordinateOfHouse, orangeCenter, secondCoordinateOfHouse, orangeDistances));
+		;
 	}
-	
-	
-	public static int getFruitCounter(int firstCoordinateOfHouse, int center, int secondCoordinateOfHouse, int[] distances){
+
+	public static String solution(String S) {
+
+		final char C = 'C';
+		final char A = 'A';
+
+		// if contains only B return itself
+		if (!S.contains("A") || !S.contains("C"))
+			return S;
+
+		String res = "";
+		boolean hasLetterChanged = false;
+		char prevChar = 'D';
+		for (char c : S.toCharArray()) {
+			if (c == A) {
+				if (prevChar == C) {
+					hasLetterChanged = true;
+				}
+			} else if (c == C) {
+				if (prevChar == A) {
+					hasLetterChanged = true;
+				}
+			}
+			if (hasLetterChanged) {
+				res = res + prevChar;
+				hasLetterChanged = false;
+			}
+			if (c == A || c == C) {
+				prevChar = c;
+			}
+		}
+
+		return res + prevChar;
+	}
+
+	public static int getFruitCounter(int firstCoordinateOfHouse, int center, int secondCoordinateOfHouse,
+			int[] distances) {
 		int counter = 0;
-		for(int i = 0; i<distances.length; i++){
+		for (int i = 0; i < distances.length; i++) {
 			int distance = center + distances[i];
 			if (distance >= firstCoordinateOfHouse && distance <= secondCoordinateOfHouse) {
 				counter++;
 			}
 		}
-		return counter;		
+		return counter;
 	}
-	
+
 	static int nextInt() throws IOException {
 		return parseInt(next());
 	}
