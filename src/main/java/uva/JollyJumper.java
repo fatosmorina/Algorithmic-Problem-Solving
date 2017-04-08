@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
 //https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=submit_problem&problemid=979&category=
 public class JollyJumper {
 
-	static void solve() {
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		while (input.hasNext()) {
 			Set<Integer> numbersAlreadyAdded = new HashSet<Integer>();
@@ -47,10 +47,6 @@ public class JollyJumper {
 			}
 		}
 		return max;
-	}
-
-	public static void main(String[] args) {
-		solve();
 	}
 
 }
