@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
 //https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=submit_problem&problemid=979&category=
 public class JollyJumper {
 
-	static void solve() throws Exception {
+	static void solve() {
 		Scanner input = new Scanner(System.in);
 		while (input.hasNext()) {
 			Set<Integer> numbersAlreadyAdded = new HashSet<Integer>();
@@ -37,7 +37,6 @@ public class JollyJumper {
 				System.out.println("Not jolly");
 			}
 		}
-		input.close();
 	}
 
 	public static int findMaximalElement(int[] numbers) {
@@ -50,31 +49,8 @@ public class JollyJumper {
 		return max;
 	}
 
-	static int nextInt() throws IOException {
-		return parseInt(next());
-	}
-
-	static String next() throws IOException {
-		while (tok == null || !tok.hasMoreTokens()) {
-			tok = new StringTokenizer(in.readLine());
-		}
-		return tok.nextToken();
-	}
-
 	public static void main(String[] args) {
-		try {
-			in = new BufferedReader(new InputStreamReader(System.in));
-			out = new PrintWriter(new OutputStreamWriter(System.out));
-			solve();
-			in.close();
-			out.close();
-		} catch (Throwable e) {
-			e.printStackTrace();
-			exit(0);
-		}
+		solve();
 	}
 
-	static BufferedReader in;
-	static PrintWriter out;
-	static StringTokenizer tok;
 }
