@@ -1,4 +1,5 @@
 package uva;
+
 /**
  * The Really Neato Calculator Company, Inc. has recently hired your team to help design their Super
  * Neato Model I calculator. As a computer scientist you suggested to the company that it would be neato
