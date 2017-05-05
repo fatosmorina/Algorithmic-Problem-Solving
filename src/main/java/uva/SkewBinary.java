@@ -1,3 +1,5 @@
+package uva;
+
 /**
  * When a number is expressed in decimal, the k-th digit represents a multiple of 10k. (Digits are numbered
  * from right to left, where the least significant digit is number 0.) For example,
