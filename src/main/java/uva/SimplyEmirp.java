@@ -1,3 +1,5 @@
+//https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1176
+
 package uva;
 
 import static java.lang.Integer.parseInt;
