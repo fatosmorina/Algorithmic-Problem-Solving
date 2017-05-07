@@ -23,6 +23,8 @@
  * 1252
  */
 
+//https://uva.onlinejudge.org/index.php?option=onlinejudge&Itemid=99999999&page=show_problem&category=&problem=1464
+
 package uva;
 
 import static java.lang.Integer.parseInt;
