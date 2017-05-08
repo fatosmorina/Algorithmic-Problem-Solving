@@ -21,8 +21,11 @@
  * 1 6 2 2 1 1 1 1 1 1
  */
 
-//https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3666
 // https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3666
+
+package uva;
+
+import java.util.Scanner;
 
 public class DigitCounting {
 
