@@ -34,6 +34,7 @@
  * (5) 14 (6) 19 (7) 7 (8) 14 (9) 20
  */
 
+//https://uva.onlinejudge.org/index.php?option=onlinejudge&Itemid=99999999&page=show_problem&category=&problem=260
 
 
 package uva;
