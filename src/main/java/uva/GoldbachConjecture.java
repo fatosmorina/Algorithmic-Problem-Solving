@@ -65,7 +65,7 @@ public class GoldbachConjecture {
 		}
 	}
 
-	static boolean[] sieveOfEratosthenes(int number) {
+	private static boolean[] sieveOfEratosthenes(int number) {
 		boolean[] isPrime = new boolean[number + 1];
 		for (int i = 2; i < number + 1; i++) {
 			isPrime[i] = true;
