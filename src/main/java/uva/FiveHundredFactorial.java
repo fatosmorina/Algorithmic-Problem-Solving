@@ -37,6 +37,7 @@ package uva;
  * 93326215443944152681699238856266700490715968264381621468592963895217599993229915
  * 608941463976156518286253697920827223758251185210916864000000000000000000000000
  */
+
 //https://uva.onlinejudge.org/index.php?option=onlinejudge&Itemid=99999999&page=show_problem&category=&problem=564
 
 import java.math.BigInteger;
@@ -54,6 +55,5 @@ public class FiveHundredFactorial {
 			}
 			System.out.println(number + "!\n" + product);
 		}
-		input.close();
 	}
 }
