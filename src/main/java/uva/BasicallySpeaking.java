@@ -70,6 +70,5 @@ public class BasicallySpeaking {
 			}
 			System.out.printf("%7s\n", answer);
 		}
-		input.close();
 	}
 }
