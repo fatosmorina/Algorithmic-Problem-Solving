@@ -58,6 +58,5 @@ public class AddingReversedNumbers {
 			System.out.println(resultReversed.replaceFirst("^0*", ""));
 			numberOfTestCases--;
 		}
-		input.close();
 	}
 }
