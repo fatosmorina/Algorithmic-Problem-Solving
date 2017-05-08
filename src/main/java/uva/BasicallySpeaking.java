@@ -1,4 +1,3 @@
-package uva;
 
 /**
  * The Really Neato Calculator Company, Inc. has recently hired your team to help design their Super
@@ -41,6 +40,8 @@ package uva;
  */
 
 //https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=&problem=325
+
+package uva;
 
 import java.math.BigInteger;
 import java.util.Scanner;
