@@ -1,4 +1,3 @@
-package uva;
 
 /**
  * The short story titled Coconuts, by Ben Ames Williams, appeared in the Saturday Evening Post on
@@ -36,6 +35,8 @@ package uva;
  */
 
 //https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=557
+
+package uva;
 
 import java.util.Scanner;
 
