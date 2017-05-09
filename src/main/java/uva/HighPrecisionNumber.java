@@ -1,4 +1,3 @@
-package uva;
 
 /**
  * A number with 30 decimal digits of precision can be represented by a structure type as shown in the
@@ -39,6 +38,8 @@ package uva;
  */
 
 //https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2921
+
+package uva;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
