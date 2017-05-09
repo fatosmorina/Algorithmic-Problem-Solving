@@ -35,6 +35,7 @@ package uva;
  * 20 = 3 + 17
  * 42 = 5 + 37
  */
+
 //https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=484
 
 import java.util.Scanner;
