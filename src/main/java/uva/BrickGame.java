@@ -1,4 +1,3 @@
-package uva;
 
 /**
  * There is a village in Bangladesh, where brick game is very popular. Brick game is a team game. Each
@@ -28,6 +27,8 @@ package uva;
  * Case 2: 16
  */
 //https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2986
+
+package uva;
 
 import static java.lang.Integer.parseInt;
 
