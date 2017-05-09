@@ -1,4 +1,3 @@
-package uva; 
 
 /**
  * In these days you can more and more often happen to see programs which perform some useful calculations
@@ -39,6 +38,8 @@ package uva;
  */
 
 //https://uva.onlinejudge.org/index.php?option=onlinejudge&Itemid=99999999&page=show_problem&category=&problem=564
+
+package uva; 
 
 import java.math.BigInteger;
 import java.util.Scanner;

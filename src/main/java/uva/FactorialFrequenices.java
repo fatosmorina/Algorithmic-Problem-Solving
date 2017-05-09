@@ -36,7 +36,6 @@
 
 //https://uva.onlinejudge.org/index.php?option=onlinejudge&Itemid=99999999&page=show_problem&category=&problem=260
 
-
 package uva;
 
 import java.math.BigInteger;
