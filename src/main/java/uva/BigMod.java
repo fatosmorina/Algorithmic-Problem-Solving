@@ -1,5 +1,6 @@
-package uva;
+
 //https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=727&page=show_problem&problem=310
+package uva;
 import static java.lang.Integer.parseInt;
 import static java.lang.System.exit;
 
