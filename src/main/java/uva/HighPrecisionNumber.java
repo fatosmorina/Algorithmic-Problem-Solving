@@ -60,6 +60,5 @@ public class HighPrecisionNumber {
 					"\\.0*$|(\\.\\d*?)0+$", "$1"));
 			numberOfGroups--;
 		}
-		input.close();
 	}
 }
