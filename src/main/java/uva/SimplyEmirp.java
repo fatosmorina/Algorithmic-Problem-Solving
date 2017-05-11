@@ -59,6 +59,5 @@ public class SimplyEmirp {
 				}
 			}
 		}
-		input.close();
 	}
 }
