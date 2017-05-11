@@ -51,6 +51,5 @@ public class MultipleOfSeventeen {
 				System.out.println("0");
 			}
 		}
-		input.close();
 	}
 }
