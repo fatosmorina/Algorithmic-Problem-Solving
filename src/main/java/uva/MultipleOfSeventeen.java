@@ -43,7 +43,7 @@ public class MultipleOfSeventeen {
 	private static final BigInteger BIGINTEGER_SEVENTEEN = new BigInteger("17");
 	private static final BigInteger BIGINTEGER_ZERO = new BigInteger("0");
 
-	static void solve() throws Exception {
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		while (input.hasNext()) {
 			BigInteger number = input.nextBigInteger();
@@ -62,32 +62,4 @@ public class MultipleOfSeventeen {
 		}
 		input.close();
 	}
-
-	static int nextInt() throws IOException {
-		return parseInt(next());
-	}
-
-	static String next() throws IOException {
-		while (tok == null || !tok.hasMoreTokens()) {
-			tok = new StringTokenizer(in.readLine());
-		}
-		return tok.nextToken();
-	}
-
-	public static void main(String[] args) {
-		try {
-			in = new BufferedReader(new InputStreamReader(System.in));
-			out = new PrintWriter(new OutputStreamWriter(System.out));
-			solve();
-			in.close();
-			out.close();
-		} catch (Throwable e) {
-			e.printStackTrace();
-			exit(0);
-		}
-	}
-
-	static BufferedReader in;
-	static PrintWriter out;
-	static StringTokenizer tok;
 }
