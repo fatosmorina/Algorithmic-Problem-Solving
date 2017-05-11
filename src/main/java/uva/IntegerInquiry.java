@@ -40,6 +40,5 @@ public class IntegerInquiry {
 			sum = sum.add(number);
 		}
 		System.out.println(sum);
-		input.close();
 	}
 }
