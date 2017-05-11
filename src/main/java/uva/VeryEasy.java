@@ -46,6 +46,5 @@ public class VeryEasy {
 			}
 			System.out.println(sum);
 		}
-		input.close();
 	}
 }
