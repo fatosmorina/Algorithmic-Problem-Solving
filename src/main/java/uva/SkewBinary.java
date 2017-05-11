@@ -69,6 +69,5 @@ public class SkewBinary {
 			}
 			System.out.println(sum);
 		}
-		input.close();
 	}
 }
