@@ -1,4 +1,4 @@
-package hackerrank.algorithms.warmup;
+package hackerrank.algorithms.strings;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,7 +20,7 @@ public class CamelCaseTest {
         String word = "saveChangesInTheEditor";
         assertEquals(5, camelCase.getNumberOfWords(word));
     }
-    
+
     @SuppressWarnings("static-access")
     @Test
     public void shouldReturnTwo() {
