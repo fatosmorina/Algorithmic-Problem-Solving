@@ -20,5 +20,11 @@ public class CamelCaseTest {
         String word = "saveChangesInTheEditor";
         assertEquals(5, camelCase.getNumberOfWords(word));
     }
-   
+    
+    @SuppressWarnings("static-access")
+    @Test
+    public void shouldReturnTwo() {
+        String word = "sA";
+        assertEquals(2, camelCase.getNumberOfWords(word));
+    }
 }
