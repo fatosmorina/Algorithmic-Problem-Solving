@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/drawing-book
+
 package hackerrank.algorithms.implementations;
 
 import static java.lang.Integer.parseInt;
@@ -10,7 +12,6 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-//https://www.hackerrank.com/challenges/drawing-book
 public class DrawingBook {
     static void solve() throws Exception {
         int n = nextInt();
