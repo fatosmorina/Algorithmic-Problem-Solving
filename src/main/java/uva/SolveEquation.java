@@ -1,4 +1,3 @@
-
 /**
  * Let us look at a boring mathematics problem. :-) We have three different
  * integers, x, y and z, which satisfy the following three relations: • x + y +

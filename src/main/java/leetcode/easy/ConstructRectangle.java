@@ -1,10 +1,11 @@
+// https://leetcode.com/problems/construct-the-rectangle/
+
 package leetcode.easy;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// https://leetcode.com/problems/construct-the-rectangle/
 public class ConstructRectangle {
 
     public int[] constructRectangle(int area) {
