@@ -30,7 +30,6 @@ package uva;
 
 //https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=642
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class ArchaeologistsDilemma {
