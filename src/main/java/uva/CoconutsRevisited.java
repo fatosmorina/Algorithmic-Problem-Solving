@@ -1,4 +1,3 @@
-
 /**
  * The short story titled Coconuts, by Ben Ames Williams, appeared in the Saturday Evening Post on
  * October 9, 1926. The story tells about five men and a monkey who were shipwrecked on an island.
@@ -42,7 +41,7 @@ import java.util.Scanner;
 
 public class CoconutsRevisited {
 
-	static void solve() throws Exception {
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int i, rez, j;
 		boolean isValid;
