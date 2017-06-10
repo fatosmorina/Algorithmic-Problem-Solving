@@ -1,6 +1,6 @@
+// https://leetcode.com/problems/count-primes/
 package leetcode.easy;
 
-// https://leetcode.com/problems/count-primes/
 public class CountPrimes {
     public int countPrimes(int n) {
 	int counter = 0;
