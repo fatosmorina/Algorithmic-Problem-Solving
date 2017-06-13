@@ -1,6 +1,6 @@
+//https://leetcode.com/problems/detect-capital/?tab=Description
 package leetcode.easy;
 
-//https://leetcode.com/problems/detect-capital/?tab=Description
 public class DetectCapital {
     public boolean detectCapitalUse(String word) {
 	int length = word.length();
