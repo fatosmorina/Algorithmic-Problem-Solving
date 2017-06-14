@@ -1,7 +1,8 @@
+//https://leetcode.com/problems/find-the-difference/
+
 package leetcode.easy;
 
 public class FindTheDifference {
-    // https://leetcode.com/problems/find-the-difference/
     public char findTheDifference(String s, String t) {
         int sum = 0;
         for (int i = 0; i < s.length(); i++) {
