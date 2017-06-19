@@ -34,12 +34,14 @@
  * Explanation
  * 
  * In this example:
+ * A = (a_0, a_1, a_2) = (5, 6, 7)
+ * B = (b_0, b_1, b_2) = (3, 6, 10)
  * 
  * Now, let's compare each individual score:
  * 
- * , so Alice receives  point.
- * , so nobody receives a point.
- * , so Bob receives  point.
+ * a_0 > b_0, so Alice receives  point.
+ * a_1 = b_1, so nobody receives a point.
+ * a_2 < b_2, so Bob receives  point.
  * Alice's comparison score is , and Bob's comparison score is . Thus, we print 1 1 (Alice's comparison score followed by Bob's comparison score) on a single line.
  *
  */
