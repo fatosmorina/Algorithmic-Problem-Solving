@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/compare-the-triplets
+
 package hackerrank.algorithms.warmup;
 
 import static java.lang.Integer.parseInt;
@@ -10,7 +12,6 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-//https://www.hackerrank.com/challenges/compare-the-triplets
 public class CompareTheTriplets {
     static void solve() throws Exception {
         System.out.println(compareTheTriplets(getArray(), getArray()));
