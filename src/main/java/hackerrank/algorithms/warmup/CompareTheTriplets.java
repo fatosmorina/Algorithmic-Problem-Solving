@@ -18,7 +18,8 @@
  * The second line contains  space-separated integers, , , and , describing the respective values in triplet .
  * 
  * Constraints
- * 
+ * 1 <= a_i <= 100
+ * 1 <= b_i <= 100
  * Output Format
  * 
  * Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.
