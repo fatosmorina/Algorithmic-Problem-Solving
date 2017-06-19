@@ -42,7 +42,7 @@
  * a_0 > b_0, so Alice receives  point.
  * a_1 = b_1, so nobody receives a point.
  * a_2 < b_2, so Bob receives  point.
- * Alice's comparison score is , and Bob's comparison score is . Thus, we print 1 1 (Alice's comparison score followed by Bob's comparison score) on a single line.
+ * Alice's comparison score is 1, and Bob's comparison score is 1. Thus, we print 1 1 (Alice's comparison score followed by Bob's comparison score) on a single line.
  *
  */
 
