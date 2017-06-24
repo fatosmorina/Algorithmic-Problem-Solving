@@ -23,7 +23,7 @@
  * 2
  * Explanation 0
  * 
- * We have one candle of height , one candle of height , and two candles of height . Colleen only blows out the tallest candles, meaning the candles where . Because there are  such candles, we print  on a new line.
+ * We have one candle of height 1, one candle of height 2, and two candles of height 3. Colleen only blows out the tallest candles, meaning the candles where height = 3. Because there are 2 such candles, we print 2 on a new line.
  */
 
 //https://www.hackerrank.com/challenges/birthday-cake-candles
