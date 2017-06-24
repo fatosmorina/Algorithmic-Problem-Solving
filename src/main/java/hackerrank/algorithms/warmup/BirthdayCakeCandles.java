@@ -9,9 +9,9 @@
  * The second line contains  space-separated integers, where each integer  describes the height of candle .
  * 
  * Constraints
- * 
+ * 1 <= n <= 10^5
  * Output Format
- * 
+ * 1 <= height_i <= 10^7
  * Print the number of candles Colleen blows out on a new line.
  * 
  * Sample Input 0
