@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/diagonal-difference/submissions/code/20132371
+
 package hackerrank.algorithms.warmup;
 
 import static java.lang.Integer.parseInt;
@@ -9,7 +11,6 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-//https://www.hackerrank.com/challenges/diagonal-difference/submissions/code/20132371
 public class DiagonalDifference {
     static void solve() throws Exception {
         int length = nextInt();
