@@ -1,9 +1,10 @@
+//https://www.hackerrank.com/challenges/birthday-cake-candles
+
 package hackerrank.algorithms.warmup;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-//https://www.hackerrank.com/challenges/birthday-cake-candles
 public class BirthdayCakeCandles {
 
 	public static void main(String[] args) {
